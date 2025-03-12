@@ -1,0 +1,231 @@
+
+  /* Global Reset and Base Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  /* Main Document Container */
+  #main-doc {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Section Styling */
+  .main-section {
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover Effect for Sections */
+  .main-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Header Styling */
+  .main-section header {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .main-section header h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  /* Paragraph Styling */
+  .main-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  /* Highlight the First Paragraph of Each Section */
+  .main-section p:first-of-type {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+
+  /* Image Section Styling */
+  #img-div {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #img-caption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+  }
+
+  /* Link Styling */
+  #tribute-link {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px 24px;
+    width: fit-content;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  #tribute-link:hover {
+    background-color: #388e3c;
+  }
+
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    #main-doc {
+      width: 95%;
+      padding: 20px;
+    }
+
+    .main-section header h2 {
+      font-size: 1.5rem;
+    }
+
+    .main-section {
+      padding: 15px;
+    }
+  }
+
+  code {
+    background-color: #f4f4f4;
+    color: #c7254e;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  /* Highlight code blocks on hover */
+  code:hover {
+    background-color: #e1f5fe;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Highlight on hover */
+  li:hover {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #4CAF50;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+
+  #navbar header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 15px;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  #navbar a:hover {
+    color: #c8e6c9;
+  }
+
+  /* Main content area adjustment */
+  #main-doc {
+    margin-left: 270px;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    #navbar {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+
+    #main-doc {
+      margin-left: 0;
+    }
+  }
+
+#navbar {
+  position: fixed;  /* Keeps the navbar in place even when scrolling */
+  top: 0;           /* Aligns it to the top edge */
+  left: 0;          /* Aligns it to the left edge */
+  width: 250px;     /* Sets the width of the navbar */
+  height: 100%;     /* Makes it span the full height of the window */
+  background-color: #333;  /* Dark background color */
+  color: white;     /* Text color */
+  padding: 20px;    /* Padding inside the navbar */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);  /* A subtle shadow effect */
+  overflow-y: auto; /* Allows scrolling if the content overflows */
+}
+

@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ada Lovelace Tribute</title>
+  <link rel="stylesheet" href="4p.css">
+  <style>
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+    body {
+      padding-top: 60px;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      #nav-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+      #header-img {
+        width: 80px;
+        height: auto;
+      }
+      body {
+        padding-top: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header id="header">
+    <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg" alt="Ada Lovelace Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Education">Education</a>
+      <a class="nav-link" href="#Legacy">Legacy</a>
+      <a class="nav-link" href="#Subscribe">Subscribe</a>
+      <a class="nav-link" href="#Video">Documentary</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="Introduction">
+      <h1>Tribute to Ada Lovelace</h1>
+      <p>The first computer programmer and a pioneer in the field of computing.</p>
+    </section>
+
+    <!-- Embedded Video -->
+    <section id="Video">
+      <h2>Watch a Short Documentary</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/uBbVbqRvqTM" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Email Form -->
+    <section id="Subscribe">
+      <h2>Subscribe for Updates</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <input type="submit" id="submit" value="Subscribe">
+      </form>
+    </section>
+
+    <!-- Education Section -->
+    <section id="Education">
+      <h2>Education</h2>
+      <p>Ada studied advanced mathematics under Augustus De Morgan and made significant contributions to early computer science theories.</p>
+    </section>
+
+    <!-- Legacy Section -->
+    <section id="Legacy">
+      <h2>Legacy and Influence</h2>
+      <p>Ada Lovelace is credited with writing the first algorithm intended for a machine.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+
+}
+
+
+** end of undefined **
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ada Lovelace Tribute</title>
+  <link rel="stylesheet" href="ssssss.css">
+  <style>
+    #navbar-toggle {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      overflow-y: auto;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    #navbar.visible {
+      transform: translateX(0);
+    }
+
+    .main-section {
+      display: none;
+    }
+
+    .main-section.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Icon -->
+  <button id="navbar-toggle" aria-label="Toggle Navigation">
+    ☰
+  </button>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>Quick Navigation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Early_Life">Early Life</a></li>
+      <li><a class="nav-link" href="#Education">Education</a></li>
+      <li><a class="nav-link" href="#Collaboration_with_Charles_Babbage">Collaboration with Charles Babbage</a></li>
+      <li><a class="nav-link" href="#Legacy_and_Influence">Legacy and Influence</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-doc">
+    <h1 id="title">Tribute to Ada Lovelace</h1>
+    <p id="description">The first computer programmer and a pioneer in the field of computing.</p>
+    
+    <!-- Image Section -->
+    <div id="img-div">
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg" alt="Portrait of Ada Lovelace">
+     
+        <figcaption id="img-caption">Ada Lovelace - Mathematician and Writer</figcaption>
+    </div>
+
+    <!-- Tribute Information Section -->
+    <section class="main-section" id="Introduction">
+      <header><h2>Introduction</h2></header>
+      <p>Hell Star Store List of Expectations </p>
+      <code>Safty Gears, Fast Delivery and identity safty assurance.
+          <br>Return and Refund in Assult Weapon <br> Hand Guns:All kinds get licensed and delivered  
+          <br> Fassion Cloths:Hip hop cloths and couprate,  
+          <br> Bookings: Hotel reservation and Home Rental buy a safe house </code>
+      <ul>
+        <li>Translated an Italian article on the Analytical Engine.</li>
+        <li>Added extensive explanatory notes.</li>
+        <li>Wrote the first algorithm intended for a machine.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Early_Life">
+      <header><h2>Early Life</h2></header>
+      <p>Ada Lovelace was born in 1815.</p>
+      <code>age = year - 1815</code>
+    </section>
+
+    <section class="main-section" id="Education">
+      <header><h2>Education</h2></header>
+      <p>Ada studied advanced mathematics under Augustus De Morgan.</p>
+      <code>A ∧ B = B ∧ A</code>
+    </section>
+
+    <section class="main-section" id="Collaboration_with_Charles_Babbage">
+      <header><h2>Collaboration with Charles Babbage</h2></header>
+      <p>She worked on Babbage's Analytical Engine.</p>
+      <code>sum = num1 + num2</code>
+      <ul>
+        <li>Translated an Italian article on the Analytical Engine.</li>
+        <li>Added extensive explanatory notes.</li>
+        <li>Wrote the first algorithm intended for a machine.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Legacy_and_Influence">
+      <header><h2>Legacy and Influence</h2></header>
+      <p>Ada Lovelace is credited with writing the first algorithm intended for a machine.</p>
+      <code>FOR i = 1 TO n: OUTPUT i²</code>
+    </section>
+
+    <!-- External Link -->
+    <a id="tribute-link" href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Learn more about Ada Lovelace</a>
+ <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>Ada Lovelace is often regarded as the first computer programmer.</p>
+      <p>Here is an example of a basic math function:</p>
+      <code>f(x) = x² + 2x + 1</code>
+      <ul>
+        <li>Translated an Italian article on the Analytical Engine.</li>
+        <li>Added extensive explanatory notes.</li>
+        <li>Wrote the first algorithm intended for a machine.</li>
+      </ul>
+    </section>
+    </main>
+<section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>Ada Lovelace is often regarded as the first computer programmer.</p>
+      <p>Here is an example of a basic math function:</p>
+      <code>f(x) = x² + 2x + 1</code>
+      <ul>
+        <li>Translated an Italian article on the Analytical Engine.</li>
+        <li>Added extensive explanatory notes.</li>
+        <li>Wrote the first algorithm intended for a machine.</li>
+      </ul>
+    </section>
+  <script>
+    // Toggle Navbar Visibility
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('.main-section');
+
+    navbarToggle.addEventListener('click', () => {
+      navbar.classList.toggle('visible');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        sections.forEach(section => section.classList.remove('visible'));
+        targetSection.classList.add('visible');
+        navbar.classList.remove('visible');
+      });
+    });
+  </script>
+    
+    
+</body>
+</html>

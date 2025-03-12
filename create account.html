@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="survayStyle.css">
+<img src="images/fireface.png">
+<h1 id="title">Create Account</h1>
+<p id="description">For easy purchase and quick delivery
+        <em>You're must fill every section of the form</em>
+    
+        <em> And Your payment information mt be currect if using Bank Card, if wrong twice you get blocked and id will be required </em>
+</p>
+
+<form id="survey-form">
+    <label id="name-label">Please enter your full name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    <label id="email-label">Please enter your full email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    <label id="number-label">Please Enter Your Age</label>
+    <input type="number" id="number" name="number" placeholder="Age" min="9" max="99" required />
+    <br />
+    <br />
+
+    <label for="dropdown">Choose Your Continent:</label>
+    <select id="dropdown" name="language" required>
+        <option value="">--Please select an option--</option>
+        <option value="American">American</option>
+        <option value="Europe ">Europe</option>
+        <option value="Asian">Asian</option>
+        <option value="Australia ">Australia</option>
+        <option value="Africa ">Africa</option>
+    </select>
+
+    <p>What is your preferred delivery method?</p>
+    <input type="radio" id="remote" name="work-style" value="remote" required />
+    <label for="remote">Pick-up Station</label>
+
+    <input type="radio" id="office" name="work-style" value="office" required />
+    <label for="office">Door Delivery</label>
+
+    <p>Which payment method do you know ?</p>
+    <input type="checkbox" id="Html" name="language" value="Html" />
+    <label for="html">Credit card </label>
+    <input type="checkbox" id="javascript" name="languages" value="javascript" />
+    <label for="javascript">Wire Bank Transfer</label>
+
+    <input type="checkbox" id="python" name="languages" value="python" />
+    <label for="python">Crypto transfer</label>
+
+    <input type="checkbox" id="java" name="languages" value="java" />
+    <label for="java">Cash Deposit, <br> <br> For cash deposit we use <strong>'world remit, western union'</strong></label>
+    <br />
+    <br />
+
+    <label for="feedback">Share your feedback:</label>
+    <textarea id="feedback" name="feedback" placeholder="Write your comments here..." rows="4" cols="50"></textarea>
+    <button type="submit" id="submit"><a href="survey%20terms&condition.html">S</a>ubmit</button>
+</form>
+
+<div class="footer-col-1">
+    <h3>Download Our App</h3>
+
+    <p>Download App From PlayStore and AppleStore</p>
+    <div class="app-logo">
+        <a href="playstore.com"><img src="images/ps%20logoimages.png" /></a>
+        <a href="applestore.com">App Store</a>
+    </div>
+</div>

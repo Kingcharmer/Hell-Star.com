@@ -1,0 +1,87 @@
+*
+  #title {
+    color: #4A90E2;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+#description {
+    font-size: 18px; 
+    color: green;  
+    line-height: 1.6;
+    margin: 20px; 
+  }
+#h5{
+  color: red;
+  text-align: center;
+}
+  #survey-form {
+    width: 300px;
+    margin: 0 auto;  /* Centers the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: pink;
+  }
+  #name-label {
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-top: 10px;
+  }
+  #email-label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-top: 10px;
+  }
+   #number-label {
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-top: 10px;
+   }
+    #dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black
+  }
+   input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  label {
+    margin-right: 15px;
+  }
+   input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  label {
+    margin-right: 15px;
+  }
+   #feedback {
+     
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+   }
+    #submit {
+    background-color:sliver ;
+    color: Gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  #submit:hover {
+    background-color: blue;
+    border: none;
+  }
